@@ -1,10 +1,6 @@
 package ejecutable;
 
-import dao.DaoCiudad;
-import dao.DaoPais;
-import dao.DaoPersona;
-import dao.DaoEstudiante;
-import dao.DaoCurso;
+import dao.*;
 import model.*;
 
 import java.util.ArrayList;
@@ -21,7 +17,17 @@ public class Inicio {
       //  crearCiudad();
         System.out.println("trabajando ...");
        // crearCurso();
-        verEstudianteCurso();
+      //  verEstudianteCurso();
+        crearDiscos();
+    }
+
+    static void crearDiscos(){
+        AudioDisco a=new AudioDisco();
+        VideoDisco v = new VideoDisco();
+        a.setNombre("Submarino amarillo");
+        v.setNombre("Shakira Live");
+        DaoAudio.create(a);
+        DaoVideo.create(v);
     }
 
     static void verEstudianteCurso(){
