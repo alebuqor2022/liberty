@@ -11,9 +11,9 @@
             <property name="hibernate.connection.username" value="root"></property>
             <property name="hibernate.connection.password" value="1234"></property>
             <property name="hibernate.connection.driver_class" value="com.mysql.cj.jdbc.Driver"/>
-            <property name="hibernate.connection.url" value="jdbc:mysql://localhost:3306/liberty"></property>
+            <property name="hibernate.connection.url" value="jdbc:mysql://localhost:3306/liberty_bis"></property>
             <property name="hibernate.cache.provider_class" value="org.hibernate.cache.NoCacheProvider"/>
-            <!-- <property name="javax.persistence.schema-generation.database.action" value="create"></property> -->
+           <property name="javax.persistence.schema-generation.database.action" value="create"></property>
         </properties>
 
     </persistence-unit>

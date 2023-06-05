@@ -1,6 +1,10 @@
 package model;
 
 import javax.persistence.*;
+// pojo : plain old java object
+// Entity Bean : es una tabla en BD
+// DTO = data transfer object
+// VO = value object
 
 @Entity
 @Table(name="personas")
@@ -16,6 +20,8 @@ public class Persona {
     @Column(name="apellidos")
     private String apellido;
 
+    // es solo un atributo, no tiene el @Column entonces no persiste en BD
+    private String domicilio;
 
     public Long getId() {
         return id;
